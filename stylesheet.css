@@ -1,0 +1,85 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font: normal 75% Helvetica;
+}
+
+canvas {
+  vertical-align: bottom;
+}
+
+
+/* ---- welcome- index ---- */
+
+h1  {
+  position: absolute;
+  color: white;  
+  top: 50%;
+  left: 50%; 
+  transform: translateY(-75%) translateX(-50%);
+  text-align: center; 
+  // padding: 6rem; // padding: 6rem 0;
+  }
+
+  mark {
+    color: #17182f;
+    background-color: #c1440e;
+  }
+
+/* ---- intro index ---- */
+
+.intro-block {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  width: 20rem; 
+  height: 20rem;
+  border-radius: 50%;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js, .particles-js {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #17182f;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+
+}
+
+@media only screen and (max-width: 400px) {
+  h1 { 
+font-size: 1.4rem;  
+}
+  
+}
+/* ---- stats.js ---- */
+
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}

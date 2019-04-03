@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Mars Escobin</title>
+</head>
+<body>
+  <div id="particles-js">
+                <h1>Hi, I'm <mark>Mars</mark>.
+                    I help people build wealth, effective teams, webapps and chatbots.
+                    <br>
+                    What can I help you build?</h1>          
+</div>
+<div class="intro-block">
+    <div id ="intro-1" class="intro" >
+            <img src="dp.jpg" alt="" id="img">
+    </div>
+    <div id="intro-2" class="intro">
+            <h2>Mars Escobin</h2>
+            <h4>"If you don't create, you'd be defined by your taste"- _why the lucky stiff. I started building things about 7 years ago when I co-founded UPMUN, an organization and community in my University whose goal was to bring a global perspective into local political discourses. About the same time, I started taking coding classes and devouring a huge chunk of open source classes. I wrote about it here. From then on, I proceeded to finish my bachelors in Economics while working and by the time I had graduated, I have had been employed thrice and just got promoted to a supervisor position on the last one. I joined the last company-- a startup-- primarily because I wanted to learn code more and being in a room full of engineers sounded so attractive at the time. But my professional track took a turn from leading a team of 5, 15 and then 50 as an Operations Manager. On my last year as an OM, wanting to rekindle the software devlopment path, I enrolled in a coding bootcamp- a 20hr/week in office classes. After which, I joined our team's B2B leg to help with sales and onboarding to help develop products. And then jumped onto an innovation project as DevOps. 
+            </h4>
+           
+    </div>
+</div>
+
+<div style=" width: 44%; 
+    margin: 15px auto;" class="container">
+    <h2>Chart.js — Pie Chart Demo</h2>
+    <div>
+      <canvas style="position:absolute;top:150px;" id="myChart"></canvas>
+    </div>
+</div>
+
+<div style=" width: 80%;
+    margin: 15px auto;" class="container">
+  <canvas id="donut" ></canvas>
+</div>
+
+<div>
+  <h4>Get in touch.</h4>
+  <ul>
+    <li>EMAIL</li>
+    <li>INSTRAGRAM</li>
+  </ul>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script type="text/javascript">
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 10,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: [],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+      ],
+      data: [433, 44]
+    }]
+  }
+});
+</script>
+
+<script>
+var ctx = document.getElementById("donut").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ["Green", "Blue", "Gray", "Purple", "Yellow", "Red", "Black"],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#95a5a6",
+        "#9b59b6",
+        "#f1c40f",
+        "#e74c3c",
+        "#34495e"
+      ],
+      data: [12, 19, 3, 17, 28, 24, 7]
+    }]
+  }
+});
+  </script>
+
+
+
+</body>
+</html>
