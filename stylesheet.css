@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font: normal 75% Helvetica;
+  font: normal 1.2rem Helvetica;
 }
 
 canvas {
@@ -10,39 +10,29 @@ canvas {
 }
 
 /*----nav-----*/
-.navbar {
-  height: 80px;
-  background-color: transparent;
-  border: none;
+nav {
+  height: 5rem;
+}
+
+nav ul {
+list-style-type: none;
+background: white;
+
+}
+
+nav ul li {
   color: white;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
+  font-size: 1.1rem;
+  float: right;
+  padding: .5rem;
+  position: fixed;
+  right: 5rem;
 }
 
-   .navbar-brand {
-     margin-top: 10px;
-     color: white;
-    }
-
-
-
-
-/*.nav {
-  display: block;
-  position: absolute;
-  right: 150px;
+nav ul li:nth-child(2){
+position: fixed;
+right: 12rem;
 }
-
-.nav ul {
-  margin: 0;
-  list-style-type: none;
-}
-.nav ul li {
-  color: white;
-  float: left;
-  margin: 1rem;
-} */
-
 
 /* ---- welcome- index ---- */
 
@@ -56,19 +46,65 @@ h1  {
   // padding: 6rem; // padding: 6rem 0;
   }
 
-h2 {
-  color: white;
+h2, h4 {
+  display: inline;
+}
+
+h3 {
+  color: #17182f;
+  display: inline;
+  position: absolute;
+   top: 60%;
+  left: 50%; 
+  transform: translateY(-75%) translateX(-50%);
+  text-align: center; 
+  // padding: 6rem; // padding: 6rem 0;
   
 }
 
-h2.txt-type > .txt {
-border-right: 2rem solid white;
+h3.txt-type > .txt {
+border-right: .5rem solid #c1440e;
+display: inline;
 }
 
 mark {
     color: #17182f;
     background-color: #c1440e;
   }
+.txt-type {
+  font-size: 1.1rem;
+  margin: 0; 
+  padding: 0;
+  display: inline-block;
+    opacity: .8;
+
+}
+
+.search {
+  line-height: 1.5rem;
+  height: 3rem; 
+  width: 27rem; 
+  background: white;
+  position: absolute;
+   top: 60%;
+  left: 50%; 
+  transform: translateY(-75%) translateX(-50%);
+  text-align: center; 
+  border-radius: 3rem;
+  box-shadow: 0 1rem 2rem rgba(black, .1); 
+}
+
+.button {
+  width: 2rem;
+  height: 2rem;
+    position: absolute;
+  top: .5rem;
+
+  right: 1rem;
+
+}
+
+
 
 
 /* ---- intro index ---- */
@@ -76,6 +112,11 @@ mark {
 .intro-block {
   width: 100vw;
   height: 100vh;
+}
+
+
+.intro {
+  float: left;
 }
 
 img {
@@ -87,7 +128,7 @@ img {
 /* ---- particles.js container ---- */
 
 #particles-js, .particles-js {
-  position: relative;
+  /*position: relative;*/
   width: 100vw;
   height: 100vh;
   background-color: #17182f;
@@ -128,3 +169,4 @@ font-size: 1.4rem;
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
+
