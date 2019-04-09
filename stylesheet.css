@@ -48,6 +48,7 @@ h1  {
 
 h2, h4 {
   display: inline;
+  /*float: right;*/
 }
 
 h3 {
@@ -112,17 +113,22 @@ mark {
 .intro-block {
   width: 100vw;
   height: 100vh;
+  background-color: #f5f5dc;
 }
 
 
 .intro {
   float: left;
+  margin: 5rem 5rem;
 }
 
-img {
-  width: 20rem; 
-  height: 20rem;
+#img {
+  width: 12rem; 
+  height: 12rem;
+  margin: 2rem;
   border-radius: 50%;
+  border: 5px solid white;
+  float: right;
 }
 
 /* ---- particles.js container ---- */
