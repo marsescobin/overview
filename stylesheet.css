@@ -48,6 +48,8 @@ h1  {
 
 h2, h4 {
   display: inline;
+    font-family: 'Hind', sans-serif;
+
   /*float: right;*/
 }
 
@@ -98,7 +100,7 @@ mark {
 .button {
   width: 2rem;
   height: 2rem;
-    position: absolute;
+  position: absolute;
   top: .5rem;
 
   right: 1rem;
@@ -111,15 +113,36 @@ mark {
 /* ---- intro index ---- */
 
 .intro-block {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f5f5dc;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  /*background-color: white /*f5f5dc*/
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 
 .intro {
   float: left;
   margin: 5rem 5rem;
+    margin: 2rem;
+
+
+}
+
+.intro h4 {
+  margin-top: 2rem;
+}
+
+#intro-2 {
+  /*max-width: 270px;*/
+  position: relative;
+  right: 5rem;
+  margin-top: 2rem;
+  /*padding: 0.5rem;*/
+}
+
+.intro-h2 {
+margin-top: 2rem;
+font-size: 1.5rem; 
 }
 
 #img {
@@ -127,9 +150,35 @@ mark {
   height: 12rem;
   margin: 2rem;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #ddd;
   float: right;
 }
+
+
+/*-----------CHART------------*/
+#myChart {
+position: relative;
+top: 10rem;
+}
+
+.chart-h2 {
+  display: inline;
+
+}
+
+.chart-block {
+  position: relative; 
+  bottom: 200px;
+}
+
+.chart-pie {
+  position: relative;
+  top: 250px;
+  width: 44%; 
+  margin: 15px auto; 
+
+}
+
 
 /* ---- particles.js container ---- */
 
