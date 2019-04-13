@@ -46,13 +46,12 @@
 </div>
 
 <div class="chart-block" >
-<div class= "chart-pie" class="container">
+<div id= "chart-pie" class="container">
     <h2 class="chart-h2" >What I've Been Upto Lately</h2>
       <canvas id="myChart"></canvas>
 </div>
 
-<div style=" width: 80%;
-    margin: 15px auto;" class="container">
+<div id="chart-donut" class="container">
   <canvas id="donut" ></canvas>
 </div>
 </div>
@@ -260,6 +259,10 @@ particlesJS("particles-js", {
 
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
+Chart.defaults.global.legend.display = false;
+// Chart.defaults.global.tooltips.enabled = false;
+
+
 var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
@@ -280,7 +283,7 @@ var ctx = document.getElementById("donut").getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Green", "Blue", "Gray", "Purple", "Yellow", "Red", "Black"],
+    labels: ["Coding", "Hiking/Swimming/Backpacking", "Reading", "Writing", "Focusing on Fitness", "Trading"],
     datasets: [{
       backgroundColor: [
         "#2ecc71",
@@ -291,8 +294,12 @@ var myChart = new Chart(ctx, {
         "#e74c3c",
         "#34495e"
       ],
-      data: [12, 19, 3, 17, 28, 24, 7]
+      data: [.5, .1, .15, .05, .15, .05]
     }]
+  }, 
+
+      options: {
+    cutoutPercentage: 60,
   }
 });
   </script>

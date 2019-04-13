@@ -171,12 +171,16 @@ top: 10rem;
   bottom: 200px;
 }
 
-.chart-pie {
+#chart-pie {
   position: relative;
   top: 250px;
   width: 44%; 
   margin: 15px auto; 
+}
 
+#chart-donut {
+ width: 80%;
+margin: 15px auto;"
 }
 
 
