@@ -1,7 +1,9 @@
 /* ---- reset ---- */
-
+html {
+  /*margin: 0;*/
+}
 body {
-  margin: 0;
+  margin: 0 ;
   font: normal 1.2rem Helvetica;
 }
 
@@ -114,73 +116,78 @@ mark {
 
 .intro-block {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 15rem 1fr;
   /*background-color: white /*f5f5dc*/
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 
 .intro {
-  float: left;
-  margin: 5rem 5rem;
-    margin: 2rem;
+  margin: 2rem 2rem;
+  /*margin: 2rem;*/
 
 
 }
 
 .intro h4 {
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
+  color: #17182f;
 }
 
-#intro-2 {
-  /*max-width: 270px;*/
-  position: relative;
-  right: 5rem;
-  margin-top: 2rem;
-  /*padding: 0.5rem;*/
-}
 
 .intro-h2 {
-margin-top: 2rem;
+/*margin-top: 2rem;*/
 font-size: 1.5rem; 
+color: #17182f
 }
 
 #img {
   width: 12rem; 
-  height: 12rem;
-  margin: 2rem;
+  /*height: 12rem;*/
   border-radius: 50%;
   border: 5px solid #ddd;
-  float: right;
 }
 
 
 /*-----------CHART------------*/
-#myChart {
-position: relative;
-top: 10rem;
-}
-
-.chart-h2 {
-  display: inline;
-
-}
 
 .chart-block {
-  position: relative; 
-  bottom: 200px;
+  position: absolute;
+  left: 18%;
 }
 
 #chart-pie {
-  position: relative;
-  top: 250px;
-  width: 44%; 
+  /*position: relative;*/
+  /*top: 272.5px;*/
+  /*width: 44%; */
   margin: 15px auto; 
+  width: 800px;
+}
+
+#pie {
+/*position: relative;*/
+/*top: 10rem;*/
 }
 
 #chart-donut {
- width: 80%;
-margin: 15px auto;"
+ /*width: 80%;*/
+ position: relative;
+ bottom: 415px;
+ margin: 15px auto;
+
+}
+
+#chart-donut2 {
+position: relative;
+bottom: 830px;
+margin: 15px auto;
+/*width: 1200px;*/
+}
+
+#donut2 {
+margin: 15px auto;
+/*position: relative; */
+/*bottom: 620px;*/
 }
 
 
@@ -191,7 +198,6 @@ margin: 15px auto;"
   width: 100vw;
   height: 100vh;
   background-color: #17182f;
-  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -200,12 +206,63 @@ margin: 15px auto;"
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   h1 { 
 font-size: 1.4rem;  
+top: 45%;
 }
-  
+
+.search {
+  width: 60%;
+  height: 2rem;
+  top: 65%;
+
 }
+
+.button {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: .35rem;
+}
+
+.txt-type{
+  margin-top: 5px;
+  font-size: .6rem;
+}
+
+.intro {
+margin: 2rem auto;
+}
+
+.intro-block {
+  grid-template-columns: 1fr;
+}
+
+#intro-1 img {
+  height:9rem;
+  width: 9rem;
+}
+
+.intro-h2 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#intro-2 {
+  margin: 0 3rem;
+}
+
+
+#intro-2 h4 {
+   font-size: .9rem;
+
+}
+
+.chart-block {
+  left: 0%;
+}
+
+
 /* ---- stats.js ---- */
 
 
@@ -228,4 +285,6 @@ font-size: 1.4rem;
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
+
+
 

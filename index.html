@@ -27,7 +27,7 @@
                     What can I help you build?</h1> 
 
                     <div class="search">
-                    <h3 class="txt-type" data-wait="3000" data-words='["retirement fund ", "a company ", "effective teams ", "my website ", "automated chats", "web scraper"]' ></h3> 
+                    <h3 class="txt-type" data-wait="3000" data-words='["retirement fund ", "a company ", "effective teams ", "my website ", "chatbots", "web scraper"]' ></h3> 
                     <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button">
                     </div>
                         
@@ -40,28 +40,31 @@
       <div class="intro-h2"> 
         <h2>Mars Escobin</h2>
       </div>
-            
-            <h4>"If you don't create, you'd be defined by your taste"- _why the lucky stiff. I started building things about 7 years ago when I co-founded UPMUN, an organization and community in my University whose goal was to bring a global perspective into local political discourses. About the same time, I started taking coding classes and devouring a huge chunk of open source classes. I wrote about it here. From then on, I proceeded to finish my bachelors in 
+            <h4>"If you don't create, you'd be defined by your taste"- _why the lucky stiff. I started building things about 7 years ago when I co-founded UPMUN, an organization and community in my University whose goal was to bring a global perspective into local political discourses. About the same time, I started taking coding classes and devouring a huge chunk of open source classes. I wrote about it here. From then on, I proceeded to finish my bachelors in</h4>
     </div>
 </div>
 
 <div class="chart-block" >
-<div id= "chart-pie" class="container">
-    <h2 class="chart-h2" >What I've Been Upto Lately</h2>
-      <canvas id="myChart"></canvas>
+		<div id= "chart-pie" class="container">
+		   <canvas id="pie"></canvas>
+		</div>
+
+		<div id="chart-donut" class="container">
+		  <canvas id="donut" ></canvas>
+		</div>
+
+		<div id="chart-donut2" class="container">
+		  <canvas id="donut2" ></canvas>
+		</div>
 </div>
 
-<div id="chart-donut" class="container">
-  <canvas id="donut" ></canvas>
-</div>
-</div>
-<div>
+<!-- <div>
   <h4>Get in touch.</h4>
   <ul>
     <li>EMAIL</li>
     <li>INSTRAGRAM</li>
   </ul>
-</div>
+</div> -->
 
 
 
@@ -258,7 +261,7 @@ particlesJS("particles-js", {
 
 
 <script>
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("pie").getContext('2d');
 Chart.defaults.global.legend.display = false;
 // Chart.defaults.global.tooltips.enabled = false;
 
@@ -267,10 +270,12 @@ var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
     labels: ["startup stuff", "financial advising"],
+    labelColor : 'black',
+    labelFontSize : '16',
     datasets: [{
       backgroundColor: [
-        "#black",
-        "red",
+        "#ffff00",
+        "#ffffcc",
       ],
       data: [80, 20]
     }]
@@ -283,23 +288,45 @@ var ctx = document.getElementById("donut").getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Coding", "Hiking/Swimming/Backpacking", "Reading", "Writing", "Focusing on Fitness", "Trading"],
+    labels: ["Hiking/Swimming/Backpacking", "Reading", "Writing", "Focusing on Fitness", "Trading", "Coding"],
     datasets: [{
       backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-        "#e74c3c",
-        "#34495e"
+        "#ff7f7f",
+        "#ff0000",
+        "#ff1919",
+        "#ff3232",
+        "#ff4c4c",
+        "#ff6666",
+      
+        
+       
       ],
-      data: [.5, .1, .15, .05, .15, .05]
+      data: [.1, .15, .05, .15, .05,.5]
     }]
   }, 
 
       options: {
     cutoutPercentage: 60,
+  }
+});
+  </script>
+
+  <script>
+var ctx = document.getElementById("donut2").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ["Learning"],
+    datasets: [{
+      backgroundColor: [
+        "#009dd6",
+      ],
+      data: [1,]
+    }]
+  }, 
+
+      options: {
+    cutoutPercentage: 90,
   }
 });
   </script>
