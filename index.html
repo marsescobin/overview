@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
 <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  -->
@@ -30,7 +33,10 @@
                     <h3 class="txt-type" data-wait="3000" data-words='["retirement fund ", "a company ", "effective teams ", "my website ", "chatbots", "web scraper"]' ></h3> 
                     <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button">
                     </div>
-                        
+
+                   
+                    	<button class="email" style=""><p><b>Send me an email</b></p></button>
+                                         
 </div>
 <div class="intro-block">
     <div id ="intro-1" class="intro" >
@@ -47,16 +53,30 @@
 <div class="chart-block" >
 		<div id= "chart-pie" class="container">
 		   <canvas id="pie"></canvas>
-		   <ul style="list-style-type: none">
-		   	<!-- <li id="finance" class="label"><button onclick="display('finance')">Financial Advising</button></li> -->
-		   	<!-- <li id="startup" class="label"><button onclick="display('magic')">Startup stuff</button></li> -->
+		   <ul>
+		   	<li>Finance</li>
+		     	<div class="tooltip t-finance">
+		     			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		     			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		     			</span>
+		     	</div>
+
+		     	<li>Startup</li>
+		     	<div class="tooltip startup">
+		     		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		     		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		     		</span>
+		     	</div>
 		   </ul>
-		</div>
+     </div>
 
 		<div id="chart-donut" class="container">
 		  <canvas id="donut" ></canvas>
 		  <ul style="list-style-type: none;">
-		  	<li id="coding" class="label">Coding</li>
+		  	<li id="coding" class="label">
+		  		<p class="con-tooltip">Coding</p>
+		  		<span class="tooltip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+		  	</li>
 		  	<li id="hiking" class="label">Hiking/Backpacking</li>
 		  	<li id="reading" class="label">Reading</li>
 		  	<li id="writing" class="label">Writing</li>
@@ -67,36 +87,20 @@
 
 		<div id="chart-donut2" class="container">
 		  <canvas id="donut2" ></canvas>
-		  <ul style="list-style-type: none;">
+		 <!--  <ul style="list-style-type: none;">
 		  	<li id="learning" class="label">Learning</li>		  	
-		  </ul>
+		  </ul> -->
 		</div>
 </div>
-<button onclick="display('finance')">Financial Advising</button>
-<button onclick="display('magic')">Startup stuff</button>
- <div id="test"></div>
-<!-- <div>
-  <h4>Get in touch.</h4>
-  <ul>
-    <li>EMAIL</li>
-    <li>INSTRAGRAM</li>
-  </ul>
-</div> -->
 
-<script type="text/javascript">
-	function display(selected)
-  {
-  if (selected == 'finance')
-    {
-    texttoshow = "the text related to finacial advising should be displayed";
-    }
-  else if (selected == 'magic')
-    {
-    texttoshow = "Text related to magic box.";
-    }
-  document.getElementById("test").innerHTML = texttoshow;
-  }
-</script>
+<div id="particles-js2">
+	<!-- 	<h3>Find me on:</h3>
+  <ul class="social" style="position: absolute; list-style-type: none;">
+    <li class="grid-1"><a href=""><i class="fab fa-instagram fa-3x"></a></i></li>		
+    <li class="grid-2"><a href=""><i class="fab fa-github fa-3x"></i></a></li>
+    <li class="grid 3"><a href=""><i class="fab fa-medium fa-3x" ></a></li>
+  </ul> -->
+</div>
 
 
 
@@ -174,7 +178,7 @@ TypeWriter.prototype.type = function() {
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script type="text/javascript">
-particlesJS("particles-js", {
+particlesJS("particles-js",{
   "particles": {
     "number": {
       "value": 355,
@@ -285,7 +289,121 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
+particlesJS("particles-js2",{
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 10,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
 </script>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
@@ -332,7 +450,7 @@ var myChart = new Chart(ctx, {
   }, 
 
       options: {
-    cutoutPercentage: 60,
+    cutoutPercentage: 50,
   }
 });
   </script>
@@ -352,7 +470,7 @@ var myChart = new Chart(ctx, {
   }, 
 
       options: {
-    cutoutPercentage: 90,
+    cutoutPercentage: 80,
   }
 });
   </script>
