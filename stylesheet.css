@@ -204,68 +204,19 @@ color: #17182f;
 }
 
 /*******Labels*******/
-.label {
-  position: relative;
-  font-family: 'Hind';
-  border: 1px solid white;
-  display: inline;
-  border-radius: 6px;
-  background-color: pink;
-  padding: 0.5rem;
-}
-
-#learning {
-  bottom: 225px;
-  left: 20px;
-  font-size: 1.25rem;
-  color: #17182f;
-}
-
-#coding {
-  bottom: 130px;
-  right: 40px;
-  font-size: .9rem;
-  color: #c1440e;
-}
-
-#hiking {
-  left: 150px;
-  bottom: 225px;
-  font-size: .9rem;
-}
-
-#fitness {
-  bottom: 100px; 
-  left: 150px;
-  font-size: .9rem: 
-}
-
-#reading {
-  bottom: 200px;
-  left: 200px;
-  font-size: .9rem;
-}
-
-#writing {
-  bottom: 150px;
-  left: 210px;
-  font-size: .9rem;
-}
-
-#startup {
-  right: 25px;
-  font-size: 1.1rem;
-}
 
 /***TOOL TIPS****/
 .con-tooltip {
   position: absolute;
-  background: #F2D1C9;  
+  background: green;
+  color: white;  
   border-radius: 9px;  
   display: inline;
   transition: all 0.3s ease-in-out;
   cursor: default;
-  z-index: 100;
+   left: 90%;
+  transform: translateY(-75%) translateX(-50%);
+  /*padding: 0 0.5rem;*/
 }
 
 
@@ -275,8 +226,8 @@ color: #17182f;
   opacity: .40;
   width: 100%;
   padding: 0px 20px;
-  background: #333;
-  color: #E086D3;
+  background: blue;  /*color: #E086D3;*/
+  color: blue;
   position: absolute;
   top:-140%;
   left: -25%;
@@ -319,6 +270,20 @@ color: #17182f;
   }
 
 }
+
+#finance {
+  top: 150px;
+  background-color:  #F2D1C9;
+  color: #444;
+  /*border: solid 2px #c1440e;*/
+  transform: translateY(-70%) translateX(100%); 
+
+}
+
+#startup {
+
+}
+
 
 /* ---- particles.js container ---- */
 
