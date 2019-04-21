@@ -151,17 +151,19 @@ mark {
 .intro h4 {
   /*margin-top: 2rem;*/
   color: #17182f;
+
 }
 
 
 .intro-h2 {
 /*margin-top: 2rem;*/
-font-size: 1.5rem; 
 color: #17182f;
 }
 
+
+
 #img {
-  width: 12rem; 
+  width: 15vw; 
   /*height: 12rem;*/
   border-radius: 50%;
   /*border: 5px solid #ddd;*/
@@ -181,19 +183,19 @@ color: #17182f;
 }
 
 #chart-donut2 {
-  width: 700px;
+  width: 45rem;
   left: 75%;
   z-index: 0;
 }
 
 #chart-donut {
-  width: 700px;
+  width: 45rem;
   left: 75%;
   z-index:0;
 }
 
 #chart-pie{
-  width: 700px; 
+  width: 45rem; 
   left: 75%;
   z-index: 0;
 }
@@ -208,52 +210,106 @@ color: #17182f;
 /***TOOL TIPS****/
 .con-tooltip {
   position: absolute;
-  background: green;
-  color: white;  
-  border-radius: 9px;  
+  color: #17182f;
   display: inline;
   transition: all 0.3s ease-in-out;
   cursor: default;
-   left: 90%;
+  left: 90%;
   transform: translateY(-75%) translateX(-50%);
-  /*padding: 0 0.5rem;*/
+  font-style: 'Helvetica';
+  /*padding-right: 2px; */
+  /*border-right: 2px solid black*/
 }
 
+.con-tooltip:hover {
+ color: #c1440e;
+}
+
+#learning {
+    transform: translateY(25%) translateX(-100%);
+    font-size: 3rem;
+}
+
+
+#coding {
+      transform: translateY(225%) translateX(-15%);
+      font-size: 1.5rem;
+      color: white;
+}
+
+#fitness {
+      transform: translateY(310%) translateX(210%);
+      font-size: 1.5rem;
+      color: white;
+}
+
+#writing {
+      transform: translateY(200%) translateX(325%);
+      font-size: 1.5rem;
+      color: white;
+}
+
+#reading {
+      transform: translateY(100%) translateX(335%);
+      font-size: 1.5rem;
+      color: white;
+}
+
+#travel {
+      transform: translateY(35%) translateX(240%);
+      font-size: 1.5rem;
+      color: white;
+}
+
+#finance {
+   transform: translateY(200%) translateX(55%);
+      font-size: .9rem;
+}
+
+#startup {
+  transform: translateY(350%) translateX(125%);
+  font-size: 1rem;
+}
 
 .tooltip {
   visibility: hidden;
+  width: 300px;
   z-index: 1;
   opacity: .40;
-  width: 100%;
-  padding: 0px 20px;
-  background: blue;  /*color: #E086D3;*/
-  color: blue;
-  position: absolute;
-  top:-140%;
-  left: -25%;
+  text-align: justify;
+  padding: 0 .5rem;
+  background: #c1440e;
+  color: white;
   border-radius: 9px;
-  font: 16px;
-  transform: translateY(9px);
+  font-size: .5rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+  position: absolute;
+  top: 75%;
+  left:20%;
+  transform: translateY(90px);
 }
+
+
 
 .tooltip::after {
   content: " ";
-  width: 0;
-  height: 0;
-  
   border-style: solid;
   border-width: 12px 12.5px 0 12.5px;
   border-color: #333 transparent transparent transparent;
-
   position: absolute;
-  left: 40%;
+  top: -10%;
+  left: 25%;
 
 }
 
+
 .con-tooltip:hover .tooltip{
   visibility: visible;
+  /*z-index: 2000;*/
+  /*display: inline-block;*/
+  /*width: 300px;*/
+  font-size: 12px;
   transform: translateY(-10px);
   opacity: 1;
   transition: .3s linear;
@@ -270,20 +326,6 @@ color: #17182f;
   }
 
 }
-
-#finance {
-  top: 150px;
-  background-color:  #F2D1C9;
-  color: #444;
-  /*border: solid 2px #c1440e;*/
-  transform: translateY(-70%) translateX(100%); 
-
-}
-
-#startup {
-
-}
-
 
 /* ---- particles.js container ---- */
 
@@ -306,7 +348,7 @@ color: #17182f;
   margin-top: 1rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
 
   h1 { 
 font-size: 1.4rem;  
@@ -332,7 +374,7 @@ top: 45%;
 }
 
 .intro {
-margin: 2rem auto;
+margin: 1rem auto;
 }
 
 .intro-block {
@@ -350,7 +392,7 @@ margin: 2rem auto;
 }
 
 #intro-2 {
-  margin: 0 3rem;
+  margin: 0 0rem;
 }
 
 
@@ -358,6 +400,83 @@ margin: 2rem auto;
    font-size: .9rem;
 
 }
+
+.chart-block {
+  position: relative;
+  z-index: 0;
+  transform: translateY(0%) translateX(-50%);
+  height: 12vh;
+}
+
+#chart-pie, #chart-donut, #chart-donut2 {
+  position: absolute;
+}
+
+#chart-donut2 {
+  width: 350px;
+  left: 50%;
+  z-index: 0;
+}
+
+#chart-donut {
+  width: 350px;
+  left: 50%;
+  z-index:0;
+}
+
+#chart-pie{
+  width: 350px; 
+  left: 50%;
+  z-index: 0;
+}
+
+
+.span {
+  font: Helvetica;
+}
+
+
+#learning {
+    transform: translateY(15px) translateX(-100px);
+    font-size: 1.25rem;
+}
+
+#coding {
+      transform: translateY(75px) translateX(-60px);
+      font-size: 1rem;
+}
+
+#fitness {
+      transform: translateY(110px) translateX(50px);
+      font-size: 1rem;
+}
+
+#writing {
+      transform: translateY(75px) translateX(100px);
+      font-size: 1rem;
+      color: white;
+}
+
+#reading {
+      transform: translateY(35px) translateX(75px);
+      font-size: 1rem;
+}
+
+#hiking {
+      transform: translateY(10px) translateX(20px);
+      font-size: 1rem;
+}
+
+#finance {
+   transform: translateY(50px) translateX(0px);
+      font-size: .75rem;
+}
+
+#startup {
+  transform: translateY(125px) translateX(10px);
+  font-size: .75rem;
+}
+
 
 }
 
@@ -385,14 +504,7 @@ margin: 2rem auto;
 
 /*******SOCIAL**********/
 
-.social {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5vh;
-  width: 100vw;
- /*justify-items: center;*/
- align-items: end;
- grid-gap: 5rem;
+
 }
 
 /*.grid-1 {
