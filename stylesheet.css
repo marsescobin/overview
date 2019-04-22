@@ -1,6 +1,7 @@
 /* ---- reset ---- */
 html {
   margin: 0 auto;
+  /*border: 1px solid red;*/
 }
 
 body {
@@ -14,7 +15,9 @@ canvas {
 
 /*----nav-----*/
 nav {
+  background-color:  #17182f;
   height: 5rem;
+  /*position: absolute;*/
 }
 
 nav ul {
@@ -25,16 +28,16 @@ background: white;
 
 nav ul li {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   float: right;
   padding: .5rem;
-  position: fixed;
-  right: 5rem;
+  position: relative;
+  right: 10%;
 }
 
 nav ul li:nth-child(2){
-position: fixed;
-right: 12rem;
+/*position: fixed;*/
+right: 10%;
 }
 
 /* ---- welcome- index ---- */
@@ -42,11 +45,11 @@ right: 12rem;
 h1  {
   position: absolute;
   color: white;  
-  top: 35%;
+  top: 45%;
   left: 50%; 
   transform: translateY(-75%) translateX(-50%);
   text-align: center; 
-  // padding: 6rem; // padding: 6rem 0;
+  padding: 6rem 0;
   }
 
 h2, h4 {
@@ -106,7 +109,7 @@ mark {
   margin-top: 2rem;
   line-height: 1.5rem;
   height: 3rem; 
-  width: 27rem; 
+  width: 30%; 
   background: white;
   position: absolute;
   top: 55%;
@@ -133,37 +136,36 @@ mark {
 /* ---- intro index ---- */
 
 .intro-block {
-  display: grid;
-  grid-template-columns: 15rem 1fr;
-  /*background-color: white /*f5f5dc*/
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 2rem;
+  /*margin: 2rem;*/
 }
 
+#intro-1 {
+ float: left;
+
+}
 
 .intro {
   margin: 2rem 2rem;
-  /*margin: 2rem;*/
-
-
 }
 
 .intro h4 {
-  /*margin-top: 2rem;*/
   color: #17182f;
+}
 
+.intro-2-p{
+  font-size: 1.125rem;
 }
 
 
-.intro-h2 {
-/*margin-top: 2rem;*/
+.intro-h2 h2 {
 color: #17182f;
 }
 
 
 
 #img {
-  width: 15vw; 
+  width: 12rem; 
   /*height: 12rem;*/
   border-radius: 50%;
   /*border: 5px solid #ddd;*/
@@ -173,30 +175,27 @@ color: #17182f;
 /*-----------CHART------------*/
 .chart-block {
   position: relative;
-  z-index: 0;
-  transform: translateY(-75%) translateX(-50%);
   height: 12vh;
 }
 
-#chart-pie, #chart-donut, #chart-donut2 {
-  position: absolute;
+#chart-pie, #chart-donut, #chart-donut2, .labels {
+    position: absolute;
+    margin: 0 15vw;
+    width: 70vw;
 }
 
 #chart-donut2 {
-  width: 45rem;
-  left: 75%;
   z-index: 0;
+
 }
 
 #chart-donut {
-  width: 45rem;
-  left: 75%;
+  /*width: 33vw;*/
   z-index:0;
 }
 
 #chart-pie{
-  width: 45rem; 
-  left: 75%;
+  /*width: 45rem; */
   z-index: 0;
 }
 
@@ -205,8 +204,42 @@ color: #17182f;
   font: Helvetica;
 }
 
-/*******Labels*******/
+/*******SOCIAL*******/
 
+.social {
+  padding-inline-start:0px; 
+  /*margin: 0 auto;*/
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr; 
+  padding: 5px;
+/*  border: 1px solid green;
+*/  position: relative;
+  top: 85vh;
+
+}
+
+.grid1 {
+  justify-self: end;
+}
+
+.grid2 {
+  justify-self: center; 
+}
+
+.grid3 {
+  justify-self: start;
+}
+
+.fab {
+  color: #17182f;
+  float: left;
+  position: relative;
+  /*top: 85vh;*/
+  /*border: 1px solid red;*/
+ 
+
+
+}
 /***TOOL TIPS****/
 .con-tooltip {
   position: absolute;
@@ -214,61 +247,126 @@ color: #17182f;
   display: inline;
   transition: all 0.3s ease-in-out;
   cursor: default;
-  left: 90%;
-  transform: translateY(-75%) translateX(-50%);
   font-style: 'Helvetica';
-  /*padding-right: 2px; */
-  /*border-right: 2px solid black*/
 }
 
 .con-tooltip:hover {
  color: #c1440e;
 }
 
-#learning {
-    transform: translateY(25%) translateX(-100%);
-    font-size: 3rem;
-}
+
 
 
 #coding {
-      transform: translateY(225%) translateX(-15%);
+    position: absolute;
+    left: 21.5vw;
+    top: 15vw;
+    font-size: 1.75vw;
+    color: grey;
+     /* transform: translateY(225%) translateX(-15%);
       font-size: 1.5rem;
-      color: white;
+      color: white;*/
 }
 
 #fitness {
-      transform: translateY(310%) translateX(210%);
+   position: absolute;
+    left: 36vw;
+    top: 24vw;
+    font-size: 1.75vw;
+    color: grey;
+     /* transform: translateY(310%) translateX(210%);
       font-size: 1.5rem;
-      color: white;
+      color: white;*/
 }
 
 #writing {
-      transform: translateY(200%) translateX(325%);
+    position: absolute;
+    left: 43vw;
+    top: 16vw;
+    font-size: 1.75vw;
+    color: grey;
+      /*transform: translateY(200%) translateX(325%);
       font-size: 1.5rem;
-      color: white;
+      color: white;*/
 }
 
 #reading {
-      transform: translateY(100%) translateX(335%);
+   position: absolute;
+    left: 42vw;
+    top: 9vw;
+    font-size: 1.75vw;
+    color: grey;
+     /* transform: translateY(100%) translateX(335%);
       font-size: 1.5rem;
-      color: white;
+      color: white;*/
 }
 
 #travel {
-      transform: translateY(35%) translateX(240%);
+   position: absolute;
+    left: 36vw;
+    top: 3vw;
+    font-size: 1.75vw;
+    color: grey;
+     /* transform: translateY(35%) translateX(240%);
       font-size: 1.5rem;
-      color: white;
+      color: white;*/
+}
+
+.con-tooltip p {
+color: white;
+}
+
+.con-tooltip p:hover {
+  color: #17182f;
+  /*#c1440e*/
+}
+
+.p-special b:hover {
+  color:  #c1440e;
+}
+
+#learning {
+    /*transform: translateY(25%) translateX(-100%);*/
+    position: absolute;
+    top: 6vw;
+    left: 9vw;
+    font-size: 3vw;
+  
+}
+
+.special2 p {
+  color: #ddd;
+}
+
+.special2 p:hover {
+  color: white;
 }
 
 #finance {
-   transform: translateY(200%) translateX(55%);
-      font-size: .9rem;
+   position: absolute;
+    left: 30vw;
+    top: 12.5vw;
+    font-size: 1vw;
+    color: grey;
+    /*transform: rotate(-60deg);*/
+     font-style: 'Hind';
+  /* transform: translateY(200%) translateX(55%);
+      font-size: .9rem;*/
 }
 
 #startup {
-  transform: translateY(350%) translateX(125%);
-  font-size: 1rem;
+  position: absolute;
+    left: 35vw;
+    top: 17vw;
+    font-size: 1vw;
+    color: grey;
+     font-style: 'Hind';
+ /* transform: translateY(350%) translateX(125%);
+  font-size: 1rem;*/
+}
+
+.p-special b {
+  color: #17182f;
 }
 
 .tooltip {
@@ -292,6 +390,11 @@ color: #17182f;
 
 
 
+.special {
+  background-color:  #17182f;
+}
+
+
 .tooltip::after {
   content: " ";
   border-style: solid;
@@ -306,9 +409,6 @@ color: #17182f;
 
 .con-tooltip:hover .tooltip{
   visibility: visible;
-  /*z-index: 2000;*/
-  /*display: inline-block;*/
-  /*width: 300px;*/
   font-size: 12px;
   transform: translateY(-10px);
   opacity: 1;
@@ -348,18 +448,168 @@ color: #17182f;
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 975px) {
+ #chart-pie, #chart-donut, #chart-donut2 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+#learning {
+    /*transform: translateY(25%) translateX(-100%);*/
+    position: absolute;
+    top: 3vw;
+    left: -3vw;
+    font-size: 4.5vw;
+ 
+}
+
+
+#coding {
+    position: absolute;
+    left: 15vw;
+    top: 18vw;
+    font-size: 3vw;
+     /* transform: translateY(225%) translateX(-15%);
+      font-size: 1.5rem;
+      color: white;*/
+}
+
+#fitness {
+   position: absolute;
+    left: 36vw;
+    top: 33vw;
+    font-size: 3vw;
+    
+}
+
+#writing {
+    position: absolute;
+    left: 45vw;
+    top: 22vw;
+    font-size: 3vw;
+    
+}
+
+#reading {
+   position: absolute;
+    left: 45vw;
+    top: 12vw;
+    font-size: 3vw;
+     /* transform: translateY(100%) translateX(335%);
+      font-size: 1.5rem;
+      color: white;*/
+}
+
+#travel {
+   position: absolute;
+    left: 36vw;
+    top: 6vw;
+    font-size: 3vw;
+     /* transform: translateY(35%) translateX(240%);
+      font-size: 1.5rem;
+      color: white;*/
+}
+
+#finance {
+   position: absolute;
+    left: 27vw;
+    top: 18vw;
+    font-size: 2vw;
+     font-style: 'Hind';
+
+}
+
+#startup {
+  position: absolute;
+    left: 30vw;
+    top: 27vw;
+    font-size: 2vw;
+    color: grey;
+     font-style: 'Hind';
+}
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 3rem 0;
+  }
+
+  .search {
+  /*margin-top: -0.5rem;*/
+  width: 18rem; 
+}
+
+.txt-type{
+  margin-top: 5px;
+  font-size: .8rem;
+}
+
+
+.email {
+  transform:translateY(-50%) translateX(-50%);
+  margin-top: 4rem;
+}
+
+
+.intro-block {
+  display: grid; 
+  grid-template-columns: 1fr; 
+}
+
+.intro {
+  margin: 1rem 1rem;
+}
+
+#intro-1  {
+  justify-self: center;
+}
+
+#intro-1 img {
+/*width: 9rem;*/
+}
+
+.intro-2-p{
+  font-size: 1rem;
+}
+.intro-h2 {
+  text-align: center;
+}
+
+}
+
 @media only screen and (max-width: 375px) {
 
+  .special2 p {
+  color: #17182f;
+}
+
+  .special2 p:hover {
+  color: #17182f;
+}
+
+nav ul li {
+  font-size: 0.8rem;
+}
   h1 { 
+
 font-size: 1.4rem;  
 top: 45%;
+padding: 6rem 0;
 }
 
 .search {
-  width: 60%;
-  height: 2rem;
-  top: 65%;
+  margin-top: 1rem;
+  width: 15rem;
+}
 
+.email {
+  padding: 0.5rem;
+}
+
+.email p {
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  display: inline;
 }
 
 .button {
@@ -401,81 +651,6 @@ margin: 1rem auto;
 
 }
 
-.chart-block {
-  position: relative;
-  z-index: 0;
-  transform: translateY(0%) translateX(-50%);
-  height: 12vh;
-}
-
-#chart-pie, #chart-donut, #chart-donut2 {
-  position: absolute;
-}
-
-#chart-donut2 {
-  width: 350px;
-  left: 50%;
-  z-index: 0;
-}
-
-#chart-donut {
-  width: 350px;
-  left: 50%;
-  z-index:0;
-}
-
-#chart-pie{
-  width: 350px; 
-  left: 50%;
-  z-index: 0;
-}
-
-
-.span {
-  font: Helvetica;
-}
-
-
-#learning {
-    transform: translateY(15px) translateX(-100px);
-    font-size: 1.25rem;
-}
-
-#coding {
-      transform: translateY(75px) translateX(-60px);
-      font-size: 1rem;
-}
-
-#fitness {
-      transform: translateY(110px) translateX(50px);
-      font-size: 1rem;
-}
-
-#writing {
-      transform: translateY(75px) translateX(100px);
-      font-size: 1rem;
-      color: white;
-}
-
-#reading {
-      transform: translateY(35px) translateX(75px);
-      font-size: 1rem;
-}
-
-#hiking {
-      transform: translateY(10px) translateX(20px);
-      font-size: 1rem;
-}
-
-#finance {
-   transform: translateY(50px) translateX(0px);
-      font-size: .75rem;
-}
-
-#startup {
-  transform: translateY(125px) translateX(10px);
-  font-size: .75rem;
-}
 
 
 }

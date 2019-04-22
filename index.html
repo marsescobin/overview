@@ -30,7 +30,7 @@
                     What can I help you build?</h1> 
 
                     <div class="search">
-                    <h3 class="txt-type" data-wait="3000" data-words='["retirement fund ", "a company ", "effective teams ", "my website ", "chatbots", "web scraper"]' ></h3> 
+                    <h3 class="txt-type" data-wait="3000" data-words='["retirement fund ", "a company ", "effective teams ", "my website ", "chatbots ", "web scraper "]' ></h3> 
                     <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button">
                     </div>
 
@@ -47,12 +47,12 @@
         <h2>Mars Escobin</h2>
       </div>
             <h4 class="test">"If you don't create, you'd be defined by your taste"- _why the lucky stiff.</h4>
-            <p>I'm a financial adviser and a full time a project manager for a startup. If I'm not working, I'm either downing a book, working out, writing on Medium, hiking/backpacking, or most likely coding. I like building useful things. From socio-civic organizations, to workforce teams; to bots that track your expenses, or one that scrape job listings.. to building investment portfolios, I thrive on getting things from 0 to 1. This is why learning to code is important for me- because like Magic, it's a powerful way to create something out of nothing. And I think we should always be striving to create value to the world. </p>
+            <p class="intro-2-p">I'm a financial adviser and a full time a project manager for a startup. If I'm not working, I'm either downing a book, working out, writing on Medium, hiking/backpacking, or most likely coding. I like building useful things. From socio-civic organizations, to workforce teams; to bots that track your expenses, or one that scrape job listings.. to building investment portfolios, I thrive on getting things from 0 to 1. This is why learning to code is important for me- because like Magic, it's a powerful way to create something out of nothing. And I think we should always be striving to create value to the world. </p>
 
             <p>	Here's where my time usually goes:</p>
     </div>
 </div>
-s
+
 <div class="chart-block" >
 		<div id= "chart-pie" class="container">
 		   <canvas id="pie"></canvas>
@@ -66,17 +66,19 @@ s
 		  <canvas id="donut2" ></canvas>
 		</div>
 
-	<div id="finance" class="con-tooltip">
-		  		<p>Financial</p>
-		  		<p>Advising</p>
-		  		<div class="tooltip">
-		  			<p class="">I'm a licensed financial adviser in the Philippines and I help clients find the best life protection and investment vehicles for them. If you're here because of this, you may send me an email or contact me through instagram.com/financiallyfemale where I usually post about financial literacy</p>
+		<div class="labels">
+
+	 <div id="finance" class="con-tooltip">
+		  		<p class="p-special"><b>Financial <br>	Advising</b></p>
+		  
+		  		<div id="" class=" special tooltip">
+		  			<p class="p-special">I'm a licensed financial adviser in the Philippines and I help clients find the best life protection and investment vehicles for them. If you're here because of this, you may send me an email or contact me through instagram.com/financiallyfemale where I usually post about financial literacy</p>
 		  		</div>
 		  	</div>
 
 		  	<div id="startup" class="con-tooltip">
-		  		<p class="">Startup stuff</p>
-		  		<div class="tooltip">
+		  		<p class="p-special"><b>Startup stuff</b></p>
+		  		<div class="special tooltip">
 		  			<p>Most of my career is in the startup scene. I went for Jack Ma's advice-- [if you want to learn,] dont work for great companies, work for great bosses. Im fortunate enough to have worked at top management and with the founders. I have also navigated our business development leg and now, our labs leg. </p>
 		  		</div>
 		  	</div>
@@ -125,23 +127,23 @@ s
 		  		</div>
 		  	</div>
 
-		  		<div id="learning" class="con-tooltip">
+		  		<div id="learning" class=" special2 con-tooltip">
 		  		<p class="">Learning</p>
 		  		<div class="tooltip">
 		  			<p class="tooltip-p">I spend 100% of my time learning, whether its new skills, industry knowledge or upping my emotional quotient. I remind myself to obsess about the process of getting there. </p>
 		  		</div>
 		  	</div>
 
-
+</div>
 			
 </div>
 
-<div id="particles-js2">
-<!-- 		<h3>Find me on:</h3>
- 
-    <li class="grid-1"><a href=""><i class="fab fa-instagram fa-3x"></a></i></li>		
-    <li class="grid-2"><a href=""><i class="fab fa-github fa-3x"></i></a></li>
-    <li class="grid 3"><a href=""><i class="fab fa-medium fa-3x" ></a></li> -->
+<div id="particles-js2"> 
+	<ul style="list-style-type: none;" class="social">
+	  <li class="grid grid1"><a href="instagram.com/@financiallyfemale"><i class="fab fa-instagram fa-3x"></a></i></li>		
+    <li class="grid grid2"><a href="github.com/mariannetrizha"><i class="fab fa-github fa-3x"></i></a></li>
+    <li class="grids grid3"><a href="medium.com/@chutzpah"><i class="fab fa-medium fa-3x"></i></a></li>	
+	</ul>
  
 </div>
 
@@ -468,7 +470,7 @@ var myChart = new Chart(ctx, {
         // "#ffff00",
         // "#ffffcc",
       ],
-      data: [75, 25]
+      data: [70, 30]
     }]
   },
 });
@@ -508,7 +510,7 @@ var myChart = new Chart(ctx, {
     labels: ["Learning"],
     datasets: [{
       backgroundColor: [
-      "#0004ff",
+      "#17182f",
         // "#17182f",
       ],
       data: [100]
